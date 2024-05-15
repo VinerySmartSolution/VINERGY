@@ -7,7 +7,10 @@
     "configuration" : null,
     "debugMode" : false,
     "externalId" : null,
-    "firstRuleNodeId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "9cb5a8c0-1296-11ef-bf00-a758a0264872"
+    },
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "8d399410-1296-11ef-bf00-a758a0264872"
@@ -17,9 +20,57 @@
     "type" : "CORE"
   },
   "metaData" : {
-    "connections" : null,
-    "firstNodeIndex" : null,
-    "nodes" : [ ],
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "True"
+    } ],
+    "firstNodeIndex" : 0,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 203,
+        "layoutY" : 284
+      },
+      "configuration" : {
+        "alarmStatusList" : [ "ACTIVE_ACK", "ACTIVE_UNACK" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9cb5a8c0-1296-11ef-bf00-a758a0264872"
+      },
+      "name" : "asdasdasd",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckAlarmStatusNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 362,
+        "layoutY" : 367
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9cb5cfd0-1296-11ef-bf00-a758a0264872"
+      },
+      "name" : "asdasd",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbOriginatorTypeSwitchNode"
+    } ],
     "ruleChainConnections" : null
   },
   "attributes" : {
