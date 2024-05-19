@@ -1,0 +1,100 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "lastConnectedGateway" : "811fe2a0-aedd-11ee-b767-61ae9d239871"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6d241150-afd1-11ee-b5ed-8f92c2930524"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "7acd8280-d6d9-11ee-bbfa-a34d36c3f055"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "f9f1d6a0-aedf-11ee-be5a-2d562209d378"
+    },
+    "label" : "Energy meter 1 Tomatito",
+    "name" : "Main_CB_150A",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6d241150-afd1-11ee-b5ed-8f92c2930524"
+    },
+    "softwareId" : null,
+    "type" : "Default"
+  },
+  "credentials" : {
+    "credentialsId" : "CP1kVr9xwBQ67R30MeEI",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "811fe2a0-aedd-11ee-b767-61ae9d239871"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f9f1d6a0-aedf-11ee-be5a-2d562209d378"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1715723947192,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1715723947192,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1716130445185,
+      "longValue" : 1716130443368,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1716130441510,
+      "longValue" : 1716130441510,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1716130443373,
+      "longValue" : 1716130443373,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

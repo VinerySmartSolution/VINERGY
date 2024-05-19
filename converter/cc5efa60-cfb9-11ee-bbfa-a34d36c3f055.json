@@ -1,0 +1,29 @@
+{
+  "entityType" : "CONVERTER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : {
+      "scriptLang" : "TBEL",
+      "decoder" : null,
+      "tbelDecoder" : "// Decode an uplink message from a buffer\r\n// payload - array of bytes\r\n// metadata - key/value object\r\n\r\n/** Decoder **/\r\n\r\n// decode payload to JSON\r\nvar data = decodeToJson(payload);\r\n\r\nvar deviceName = \"ABC Gateway\";\r\nvar deviceType = 'AWT100 Gateway';\r\n\r\nvar telemetry = [];\r\nif (data.status != null) {\r\n    for (var i = 0; i < data.status.length; i++) {\r\n        var res = {};\r\n        var code = data.status[i].code;\r\n        var value = data.status[i].value;\r\n        if (code == \"cur_voltage\" || code == \"cur_power\") {\r\n            value = data.status[i].value / 10;\r\n        } else if (code == \"cur_current\") {\r\n            value = data.status[i].value / 100;\r\n        }\r\n        res[code] = value;\r\n        telemetry.push(res);\r\n    }\r\n    \r\n} else {\r\n    telemetry = data;\r\n}\r\n\r\nvar result = {\r\n   deviceName: deviceName,\r\n   deviceType: deviceType,\r\n   attributes: {},\r\n   telemetry: telemetry\r\n};\r\n\r\n/** Helper functions 'decodeToString' and 'decodeToJson' are already built-in **/\r\n\r\nreturn result;",
+      "encoder" : null,
+      "tbelEncoder" : null,
+      "updateOnlyKeys" : [ "manufacturer" ]
+    },
+    "debugMode" : true,
+    "edgeTemplate" : false,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CONVERTER",
+      "id" : "cc5efa60-cfb9-11ee-bbfa-a34d36c3f055"
+    },
+    "name" : "Uplink data converter for MQTT integration - Main Gateway",
+    "type" : "UPLINK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

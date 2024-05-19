@@ -1,0 +1,196 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "widgets" : {
+        "519990a8-d8f5-0d3f-da87-54b6481cd84c" : {
+          "typeFullFqn" : "system.cards.html_card",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "2px",
+            "settings" : {
+              "cardHtml" : "<div id=\"id2877d4c5b96b2\" a='{\"t\":\"r\",\"v\":\"1.2\",\"lang\":\"en\",\"locs\":[3059],\"ssot\":\"c\",\"sics\":\"ds\",\"cbkg\":\"rgb(69,90,100)\",\"cfnt\":\"#FFFFFF\",\"codd\":\"rgb(84,110,122)\",\"cont\":\"#E0E0E0\"}'>Weather Data Source: <a href=\"https://sharpweather.com/weather_thu_duc/30_days/\">weather 30 days Thu Duc</a></div><script async src=\"https://static1.sharpweather.com/widgetjs/?id=id2877d4c5b96b2\"></script>",
+              "cardCss" : ""
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "1px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "519990a8-d8f5-0d3f-da87-54b6481cd84c"
+        },
+        "529f8ffc-b815-fae1-66e7-704ca0c2dc4e" : {
+          "typeFullFqn" : "system.cards.html_card",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div id=\"openweathermap-widget-11\"></div>\r\n<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script><script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 11,cityid: '1580578',appid: '483d664da7d7da04fec262a9802eec06',units: 'metric',containerid: 'openweathermap-widget-11',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = \"utf-8\";script.src = \"//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js\";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>",
+              "cardCss" : ""
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "529f8ffc-b815-fae1-66e7-704ca0c2dc4e"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Weather dashboard",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "519990a8-d8f5-0d3f-da87-54b6481cd84c" : {
+                  "sizeX" : 89,
+                  "sizeY" : 9,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "529f8ffc-b815-fae1-66e7-704ca0c2dc4e" : {
+                  "sizeX" : 60,
+                  "sizeY" : 30,
+                  "row" : 9,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#131A29",
+                "color" : "rgba(0,0,0,0.870588)",
+                "columns" : 48,
+                "backgroundSizeMode" : "100%",
+                "autoFillHeight" : true,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70,
+                "margin" : 7,
+                "outerMargin" : true,
+                "backgroundImageUrl" : null
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "6d9aab6b-1420-9ecc-1374-d505fa272913" : {
+          "id" : "6d9aab6b-1420-9ecc-1374-d505fa272913",
+          "alias" : "Buildings",
+          "filter" : {
+            "type" : "assetType",
+            "resolveMultiple" : true,
+            "assetTypes" : [ "buildings" ],
+            "assetNameFilter" : ""
+          }
+        }
+      },
+      "timewindow" : {
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "timewindowMs" : 86400000,
+          "quickInterval" : "CURRENT_DAY",
+          "interval" : 3600000
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        },
+        "timezone" : null
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "dashboardLogoUrl" : null,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "dashboardCss" : ""
+      },
+      "filters" : { }
+    },
+    "customerId" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "43c27460-f265-11ee-bfe7-d554a4e9ea87"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Weather Dashboard",
+    "ownerId" : null,
+    "title" : "Weather Dashboard"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "775eaa50-ac83-11ee-9db5-1fb69bbe078f"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "87ee43d0-81ef-11ee-a7cd-5d661822df02"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "3dceae40-abf0-11ee-883f-6bd49e8cfa16"
+    },
+    "label" : "Air Quality 1 Office",
+    "name" : "ebec00338897aba5b0j86b",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "775eaa50-ac83-11ee-9db5-1fb69bbe078f"
+    },
+    "softwareId" : null,
+    "type" : "Tuya device"
+  },
+  "credentials" : {
+    "credentialsId" : "titekPLD3mYvFW3HjTnC",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "86b379e0-81ef-11ee-b952-7d878148e30b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "3dceae40-abf0-11ee-883f-6bd49e8cfa16"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1715687908356,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1715687908356,
+      "longValue" : 1715687908356,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1706867020532,
+      "longValue" : 600000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1715513523678,
+      "longValue" : 1715513522431,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

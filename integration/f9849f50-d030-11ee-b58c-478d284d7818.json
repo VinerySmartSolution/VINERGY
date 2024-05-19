@@ -1,0 +1,135 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "clientConfiguration" : {
+        "host" : "broker.hivemq.com",
+        "port" : 1883,
+        "cleanSession" : true,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "/gw/acrelHW/AWT100/data/24011607330019",
+        "qos" : 0
+      } ],
+      "downlinkTopicPattern" : "${topic}"
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "aae0f060-d030-11ee-a2dd-dda04d5a084f"
+    },
+    "downlinkConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "652c67a0-d064-11ee-a2dd-dda04d5a084f"
+    },
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f9849f50-d030-11ee-b58c-478d284d7818"
+    },
+    "name" : "MQTT integration Multi Devices",
+    "remote" : false,
+    "routingKey" : "ef468b62-928e-8d3c-2245-453f3435cbc7",
+    "secret" : "elfcqzpctaa16hxjf9m7",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f9849f50-d030-11ee-b58c-478d284d7818"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "fffbe550-d030-11ee-bbfa-a34d36c3f055"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f9849f50-d030-11ee-b58c-478d284d7818"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "068357f0-d031-11ee-bbfa-a34d36c3f055"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f9849f50-d030-11ee-b58c-478d284d7818"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0d12e0e0-d031-11ee-bbfa-a34d36c3f055"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f9849f50-d030-11ee-b58c-478d284d7818"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "1605ae30-d031-11ee-bbfa-a34d36c3f055"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f9849f50-d030-11ee-b58c-478d284d7818"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "1c9b2a90-d031-11ee-bbfa-a34d36c3f055"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "f9849f50-d030-11ee-b58c-478d284d7818"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "1d74aef0-d545-11ee-bbfa-a34d36c3f055"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-2",
+      "lastUpdateTs" : 1713259582760,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Main minus toher"
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "b0609e00-0217-11ef-bef7-5131a0fcf1e6"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "107e5150-0214-11ef-a118-5dbbb18067d6"
+    },
+    "name" : "Unmeasured tomatito Rule Chain",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "RPC Request from Device"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 0,
+      "type" : "True"
+    } ],
+    "firstNodeIndex" : 2,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "main minus others",
+        "layoutX" : 540,
+        "layoutY" : 145
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b06028d0-0217-11ef-bef7-5131a0fcf1e6"
+      },
+      "name" : "Message Type Switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 157,
+        "layoutY" : 312
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Initialize variables to hold kWh data from each device\r\nvar data1 = metadata.deviceName == 'Main_CB_150A' ? msg.kWh : 0;\r\nvar data2 = metadata.deviceName == 'Grill_Fridge_Total' ? msg.kWh : 0;\r\nvar data3 = metadata.deviceName == 'AC_CB_63A' ? msg.kWh : 0;\r\nvar data4 = metadata.deviceName == 'Fridge' ? msg.kWh : 0;\r\nvar data5 = metadata.deviceName == 'Freezer' ? msg.kWh : 0;\r\nvar data6 = metadata.deviceName == 'Unmeasured Tomatito' ? msg.kWh : 0;\r\n// Calculate the difference in kWh between Devices\r\nvar result = data1 - data2 - data3 - data4 - data5;\r\nvar result = data6\r\n\r\n// Return the result as a new telemetry data point\r\nreturn {kWh_difference: data6};",
+        "tbelScript" : "// Initialize variables to hold kWh data from each device\r\nvar data1 = metadata.deviceName == 'Main_CB_150A' ? msg.kWh : 0;\r\nvar data2 = metadata.deviceName == 'Grill_Fridge_Total' ? msg.kWh : 0;\r\nvar data3 = metadata.deviceName == 'AC_CB_63A' ? msg.kWh : 0;\r\nvar data4 = metadata.deviceName == 'Fridge' ? msg.kWh : 0;\r\nvar data5 = metadata.deviceName == 'Freezer' ? msg.kWh : 0;\r\n// Calculate the difference in kWh between Devices\r\nvar result = data1 - data2 - data3 - data4 - data5;\r\n\r\n// Return the result as a new telemetry data point\r\nreturn {kWh_difference: result};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b0604fe0-0217-11ef-bef7-5131a0fcf1e6"
+      },
+      "name" : "Script",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 282,
+        "layoutY" : 147
+      },
+      "configuration" : {
+        "messageNames" : [ "p" ],
+        "metadataNames" : [ "p" ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b0609e00-0217-11ef-bef7-5131a0fcf1e6"
+      },
+      "name" : "powerkey",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 541,
+        "layoutY" : 314
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "skipLatestPersistence" : false,
+        "useServerTs" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b0609e01-0217-11ef-bef7-5131a0fcf1e6"
+      },
+      "name" : "save timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

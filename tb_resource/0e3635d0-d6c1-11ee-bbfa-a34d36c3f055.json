@@ -1,0 +1,44 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "data" : "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",
+    "descriptor" : {
+      "mediaType" : "image/jpeg",
+      "width" : 245,
+      "height" : 46,
+      "size" : 4406,
+      "etag" : "b35afa15d848d39eb0bd43ae4bb2c2452f2372ef826839ff589609e3d6a4a787",
+      "previewDescriptor" : {
+        "mediaType" : "image/png",
+        "width" : 245,
+        "height" : 46,
+        "size" : 17461,
+        "etag" : "48e99d7bf0aa6cde77d0776aac31d28bdd862bc1fae92ec2ecc6daaaae7f4a92"
+      }
+    },
+    "etag" : "b35afa15d848d39eb0bd43ae4bb2c2452f2372ef826839ff589609e3d6a4a787",
+    "externalId" : null,
+    "fileName" : "cropped-ABC-Vietnam-Manufacturing-Sourcing-co.-Ltd-logo-new.jpeg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "0e3635d0-d6c1-11ee-bbfa-a34d36c3f055"
+    },
+    "link" : "/api/images/tenant/cropped-ABC-Vietnam-Manufacturing-Sourcing-co.-Ltd-logo-new.jpeg",
+    "name" : "cropped-ABC-Vietnam-Manufacturing-Sourcing-co.-Ltd-logo-new.jpeg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/smiYmucmwb5u2DN70vBJHXrh5X9kkazM",
+    "publicResourceKey" : "smiYmucmwb5u2DN70vBJHXrh5X9kkazM",
+    "resourceKey" : "cropped-ABC-Vietnam-Manufacturing-Sourcing-co.-Ltd-logo-new.jpeg",
+    "resourceType" : "IMAGE",
+    "title" : "cropped-ABC-Vietnam-Manufacturing-Sourcing-co.-Ltd-logo-new.jpeg"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

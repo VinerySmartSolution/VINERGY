@@ -1,0 +1,56 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "9a376190-6bfe-11ee-abd8-d734e2d5f9f6"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7b4a2d0-c17a-11ee-8601-79070dab8e6b"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "194794c0-d9df-11ee-a550-01ba59c8406a"
+    },
+    "label" : "Buildings",
+    "name" : "Factory Building",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7b4a2d0-c17a-11ee-8601-79070dab8e6b"
+    },
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : 10.60734,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1709526387640,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 107.1145,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1709526457593,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "units",
+      "lastUpdateTs" : 1709526477024,
+      "longValue" : null,
+      "strValue" : "metric"
+    } ]
+  }
+}

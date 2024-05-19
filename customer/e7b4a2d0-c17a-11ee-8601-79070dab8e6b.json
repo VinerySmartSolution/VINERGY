@@ -1,0 +1,41 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : "acafff50-c16f-11ee-8601-79070dab8e6b",
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : "Ho Chi Minh City",
+    "country" : "Viet Nam",
+    "customerId" : null,
+    "email" : "c.romme@abc-vietnam.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7b4a2d0-c17a-11ee-8601-79070dab8e6b"
+    },
+    "name" : "ABC Manufacturing",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : null,
+    "title" : "ABC Manufacturing",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "APPID",
+      "lastUpdateTs" : 1709524239531,
+      "longValue" : null,
+      "strValue" : "0d81c378aca83cd14a61a79417b130ec"
+    } ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6d241150-afd1-11ee-b5ed-8f92c2930524"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "87ee43d0-81ef-11ee-a7cd-5d661822df02"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "41f9d120-afb0-11ee-b145-37bdecf41c62"
+    },
+    "label" : "Air Quality 1 Tomatito",
+    "name" : "eb3b1c9e017906579dxhox",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6d241150-afd1-11ee-b5ed-8f92c2930524"
+    },
+    "softwareId" : null,
+    "type" : "Tuya device"
+  },
+  "credentials" : {
+    "credentialsId" : "j72p4yQTOfqlt1iFOM1a",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "86b379e0-81ef-11ee-b952-7d878148e30b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "41f9d120-afb0-11ee-b145-37bdecf41c62"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1715582527075,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1715582527075,
+      "longValue" : 1715582527073,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1706814055105,
+      "longValue" : 600000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1715581878677,
+      "longValue" : 1715581878535,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

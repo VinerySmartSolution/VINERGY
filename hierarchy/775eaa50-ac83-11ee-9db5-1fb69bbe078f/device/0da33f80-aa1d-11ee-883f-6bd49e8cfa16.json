@@ -1,0 +1,94 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "775eaa50-ac83-11ee-9db5-1fb69bbe078f"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "87ee43d0-81ef-11ee-a7cd-5d661822df02"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "0da33f80-aa1d-11ee-883f-6bd49e8cfa16"
+    },
+    "label" : "Smart Socket 1 Office",
+    "name" : "ebe3d95c374162e0427mrn",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "775eaa50-ac83-11ee-9db5-1fb69bbe078f"
+    },
+    "softwareId" : null,
+    "type" : "Tuya device"
+  },
+  "credentials" : {
+    "credentialsId" : "nLYoeFvQPxqSz8Xcl4BC",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "86b379e0-81ef-11ee-b952-7d878148e30b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0da33f80-aa1d-11ee-883f-6bd49e8cfa16"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1716116925822,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1716116217744,
+      "longValue" : 1716116217739,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityTimeout",
+      "lastUpdateTs" : 1707899557488,
+      "longValue" : 1800000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1716130428824,
+      "longValue" : 1716130427454,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

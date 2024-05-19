@@ -1,0 +1,86 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : true,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7b4a2d0-c17a-11ee-8601-79070dab8e6b"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "ddc53fe0-abeb-11ee-8a35-2d562209d378"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "c4250ae0-cfbb-11ee-b58c-478d284d7818"
+    },
+    "label" : "Gateway ABC Manufacturing",
+    "name" : "ABC Gateway",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7b4a2d0-c17a-11ee-8601-79070dab8e6b"
+    },
+    "softwareId" : null,
+    "type" : "Acrel gateway"
+  },
+  "credentials" : {
+    "credentialsId" : "KM8P1lTtIalBDfI1nE2y",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a8ea4660-cfb5-11ee-b58c-478d284d7818"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "c4250ae0-cfbb-11ee-b58c-478d284d7818"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1709279892546,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1709279572643,
+      "longValue" : 1709279572639,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1716130455589,
+      "longValue" : 1716130454517,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

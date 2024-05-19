@@ -1,0 +1,86 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "775eaa50-ac83-11ee-9db5-1fb69bbe078f"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "87ee43d0-81ef-11ee-a7cd-5d661822df02"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "6359dc60-ec01-11ee-9a30-a12f0dc2368b"
+    },
+    "label" : "Light Sensor Office",
+    "name" : "eb6ed5dddc851936feswu4",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "775eaa50-ac83-11ee-9db5-1fb69bbe078f"
+    },
+    "softwareId" : null,
+    "type" : "Tuya device"
+  },
+  "credentials" : {
+    "credentialsId" : "BFHuT1jhSX1DSSJkqGPT",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "86b379e0-81ef-11ee-b952-7d878148e30b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "6359dc60-ec01-11ee-9a30-a12f0dc2368b"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1716128279031,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1716128279031,
+      "longValue" : 1716128279028,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1716127644823,
+      "longValue" : 1716127642294,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

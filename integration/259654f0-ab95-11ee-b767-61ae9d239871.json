@@ -1,0 +1,75 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "host" : "broker.hivemq.com",
+        "port" : 1883,
+        "cleanSession" : false,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "/gw/acrelHW/AWT100/data/23092707860001",
+        "qos" : 0
+      } ],
+      "downlinkTopicPattern" : "${topic}",
+      "metadata" : { }
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "255ea320-ab95-11ee-80a4-b9287a0d2939"
+    },
+    "downlinkConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "255fb490-ab95-11ee-b767-61ae9d239871"
+    },
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "259654f0-ab95-11ee-b767-61ae9d239871"
+    },
+    "name" : "MQTT integration Single Device",
+    "remote" : false,
+    "routingKey" : "ac93ca4b-8aea-984d-7d4b-f56d452aac1c",
+    "secret" : "mxt3kcqvvaecvsfagdvv",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "259654f0-ab95-11ee-b767-61ae9d239871"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "ddc9d3c0-abeb-11ee-8a35-2d562209d378"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-2",
+      "lastUpdateTs" : 1713259582537,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

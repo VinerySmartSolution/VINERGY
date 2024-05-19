@@ -1,0 +1,75 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "clientConfiguration" : {
+        "host" : "broker.hivemq.com",
+        "port" : 1883,
+        "cleanSession" : false,
+        "retainedMessage" : false,
+        "ssl" : false,
+        "connectTimeoutSec" : 10,
+        "clientId" : "",
+        "maxBytesInMessage" : 32368,
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "/gw/acrelHW/AWT100/data/24011607330019",
+        "qos" : 0
+      } ],
+      "downlinkTopicPattern" : "${topic}",
+      "metadata" : { }
+    },
+    "debugMode" : true,
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "cc5efa60-cfb9-11ee-bbfa-a34d36c3f055"
+    },
+    "downlinkConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "d1124940-cfb9-11ee-a2dd-dda04d5a084f"
+    },
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a8ea4660-cfb5-11ee-b58c-478d284d7818"
+    },
+    "name" : "MQTT integration Main Gateway",
+    "remote" : false,
+    "routingKey" : "447224d6-f815-2248-2872-0e27c03d9ab0",
+    "secret" : "18d6wz4ugfzhj133cow3",
+    "type" : "MQTT"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "INTEGRATION",
+      "id" : "a8ea4660-cfb5-11ee-b58c-478d284d7818"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "c4250ae0-cfbb-11ee-b58c-478d284d7818"
+    },
+    "type" : "ManagedByIntegration",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_tb-ie-main-0",
+      "lastUpdateTs" : 1713259613344,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

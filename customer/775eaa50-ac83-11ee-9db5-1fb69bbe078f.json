@@ -1,0 +1,33 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : "1b767ca0-ac82-11ee-80a4-b9287a0d2939",
+      "homeDashboardHideToolbar" : false
+    },
+    "address" : "",
+    "address2" : "",
+    "city" : "Ho Chi Minh City",
+    "country" : "Viet Nam",
+    "customerId" : null,
+    "email" : "edwinniessen1984@yahoo.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "775eaa50-ac83-11ee-9db5-1fb69bbe078f"
+    },
+    "name" : "Vinergy",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Ho Chi Minh City",
+    "title" : "Vinergy",
+    "zip" : "93111"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
