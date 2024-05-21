@@ -267,11 +267,11 @@
               "selectedTab" : 1,
               "history" : {
                 "historyType" : 1,
-                "timewindowMs" : 60000,
-                "interval" : 864000,
+                "timewindowMs" : 2592000000,
+                "interval" : 7200000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1657006020000,
-                  "endTimeMs" : 1657438020000
+                  "startTimeMs" : 1657178820000,
+                  "endTimeMs" : 1658820420000
                 },
                 "quickInterval" : "CURRENT_DAY"
               },
@@ -635,7 +635,6 @@
     "ownerId" : null,
     "title" : "Warehouse dashboard"
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
