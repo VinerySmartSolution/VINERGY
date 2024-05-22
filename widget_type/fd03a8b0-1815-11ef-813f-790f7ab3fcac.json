@@ -13,13 +13,9 @@
       "resources" : [ {
         "url" : "https://bernii.github.io/gauge.js/dist/gauge.min.js",
         "isModule" : false
-      }, {
-        "url" : ""
-      }, {
-        "url" : ""
       } ],
-      "templateHtml" : "",
-      "templateCss" : " <canvas id=\"my-gauge\"></canvas>",
+      "templateHtml" : " <canvas id=\"my-gauge\"></canvas>",
+      "templateCss" : "",
       "controllerScript" : "var canvasElement;\r\nvar gauge;\r\n\r\nself.onInit = function() {\r\n    canvasElement = $('#my-gauge', self.ctx.$container)[0];\r\n    gauge = new Gauge(canvasElement);\r\n    gauge.minValue = -1000; \r\n    gauge.maxValue = 1000; \r\n    gauge.animationSpeed = 16; \r\n    self.onResize();\r\n}\r\n\r\nself.onResize = function() {\r\n    canvasElement.width = self.ctx.width;\r\n    canvasElement.height = self.ctx.height;\r\n    gauge.update(true);\r\n    gauge.render();\r\n}\r\n\r\nself.onDataUpdated = function() {\r\n    if (self.ctx.defaultSubscription.data[0].data.length) {\r\n        var value = self.ctx.defaultSubscription.data[0].data[0][1];\r\n        gauge.set(value);\r\n    }\r\n}",
       "settingsSchema" : "{}",
       "dataKeySettingsSchema" : "{}\n",
