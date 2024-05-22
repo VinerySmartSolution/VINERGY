@@ -11,8 +11,12 @@
       "sizeX" : 7.5,
       "sizeY" : 3,
       "resources" : [ {
-        "url" : "https://bernii.github.io/gauge.js/dist/gauge.min.jshttps://bernii.github.io/gauge.js/dist/gauge.min.js",
-        "isModule" : true
+        "url" : "https://bernii.github.io/gauge.js/dist/gauge.min.js",
+        "isModule" : false
+      }, {
+        "url" : ""
+      }, {
+        "url" : ""
       } ],
       "templateHtml" : "",
       "templateCss" : " <canvas id=\"my-gauge\"></canvas>",
