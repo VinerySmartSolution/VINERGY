@@ -1,0 +1,30 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "22651e00-ea66-11ee-a41f-419792e9cd8f"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "06bde8a0-1d90-11ef-9e10-4570a5104a0d"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "CSV_UPLOADER",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "22651e00-ea66-11ee-a41f-419792e9cd8f"
+    },
+    "title" : "CSV_UPLOADER"
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
