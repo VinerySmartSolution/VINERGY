@@ -28,16 +28,8 @@
       "toIndex" : 1,
       "type" : "Success"
     }, {
-      "fromIndex" : 0,
-      "toIndex" : 3,
-      "type" : "Success"
-    }, {
       "fromIndex" : 1,
       "toIndex" : 2,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 3,
-      "toIndex" : 4,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 0,
@@ -106,54 +98,6 @@
       "id" : {
         "entityType" : "RULE_NODE",
         "id" : "241b2d91-1296-11ef-bf00-a758a0264872"
-      },
-      "name" : "save timeseries",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 129,
-        "layoutY" : 344
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "return {msg: msg.time, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "a3b0b780-1d88-11ef-813f-790f7ab3fcac"
-      },
-      "name" : "Switch",
-      "queueName" : null,
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 196,
-        "layoutY" : 440
-      },
-      "configuration" : {
-        "defaultTTL" : 0,
-        "skipLatestPersistence" : false,
-        "useServerTs" : false
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : true,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "a3b0de90-1d88-11ef-813f-790f7ab3fcac"
       },
       "name" : "save timeseries",
       "queueName" : null,
