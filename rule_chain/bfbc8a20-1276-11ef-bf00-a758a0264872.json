@@ -12,7 +12,7 @@
     },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "241b0680-1296-11ef-bf00-a758a0264872"
+      "id" : "99580280-1d91-11ef-813f-790f7ab3fcac"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -28,8 +28,16 @@
       "toIndex" : 1,
       "type" : "Success"
     }, {
+      "fromIndex" : 0,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
       "fromIndex" : 1,
       "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 0,
@@ -49,7 +57,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "241b0680-1296-11ef-bf00-a758a0264872"
+        "id" : "99580280-1d91-11ef-813f-790f7ab3fcac"
       },
       "name" : "device profile",
       "queueName" : null,
@@ -73,7 +81,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "241b2d90-1296-11ef-bf00-a758a0264872"
+        "id" : "99582990-1d91-11ef-813f-790f7ab3fcac"
       },
       "name" : "Change timestamp in metadata to new time",
       "queueName" : null,
@@ -97,7 +105,55 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "241b2d91-1296-11ef-bf00-a758a0264872"
+        "id" : "99779870-1d91-11ef-813f-790f7ab3fcac"
+      },
+      "name" : "save timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 129,
+        "layoutY" : 344
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg.time, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9fedf410-1d91-11ef-813f-790f7ab3fcac"
+      },
+      "name" : "Switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 196,
+        "layoutY" : 440
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "skipLatestPersistence" : false,
+        "useServerTs" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9fee4230-1d91-11ef-813f-790f7ab3fcac"
       },
       "name" : "save timeseries",
       "queueName" : null,
