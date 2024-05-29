@@ -169,7 +169,7 @@
           "id" : "ed33955e-4d9e-a487-bc90-813f27acf0d0",
           "typeFullFqn" : "system.cards.timeseries_table"
         },
-        "a67d95a7-cd4a-b9c4-aa8f-bceb78d23903" : {
+        "e618e516-c220-5133-5a97-33ac8f6df9e8" : {
           "typeFullFqn" : "system.line_chart",
           "type" : "timeseries",
           "sizeX" : 8,
@@ -182,7 +182,7 @@
               "dataKeys" : [ {
                 "name" : "sound_value",
                 "type" : "timeseries",
-                "label" : "sound_value",
+                "label" : "Temperature",
                 "color" : "#2196f3",
                 "settings" : {
                   "yAxisId" : "default",
@@ -244,13 +244,13 @@
                     }
                   }
                 },
-                "_hash" : 0.7746768720450052,
-                "units" : "dB",
+                "_hash" : 0.7694912263114004,
+                "units" : "°C",
                 "decimals" : 0,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value;"
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -264,16 +264,12 @@
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 1,
-                "timewindowMs" : 2592000000,
-                "interval" : 7200000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1657178820000,
-                  "endTimeMs" : 1658820420000
-                },
-                "quickInterval" : "CURRENT_DAY"
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -522,7 +518,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "a67d95a7-cd4a-b9c4-aa8f-bceb78d23903"
+          "id" : "e618e516-c220-5133-5a97-33ac8f6df9e8"
         }
       },
       "states" : {
@@ -545,9 +541,9 @@
                   "row" : 0,
                   "col" : 13
                 },
-                "a67d95a7-cd4a-b9c4-aa8f-bceb78d23903" : {
-                  "sizeX" : 19,
-                  "sizeY" : 18,
+                "e618e516-c220-5133-5a97-33ac8f6df9e8" : {
+                  "sizeX" : 8,
+                  "sizeY" : 5,
                   "row" : 6,
                   "col" : 0
                 }
