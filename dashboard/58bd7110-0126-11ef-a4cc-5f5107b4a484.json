@@ -251,6 +251,74 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "temperature",
+                "type" : "timeseries",
+                "label" : "temperature",
+                "color" : "#4caf50",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showInLegend" : true,
+                  "dataHiddenByDefault" : false,
+                  "type" : "line",
+                  "lineSettings" : {
+                    "showLine" : true,
+                    "step" : false,
+                    "stepType" : "start",
+                    "smooth" : false,
+                    "lineType" : "solid",
+                    "lineWidth" : 2,
+                    "showPoints" : false,
+                    "showPointLabel" : false,
+                    "pointLabelPosition" : "top",
+                    "pointLabelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
+                    "pointShape" : "emptyCircle",
+                    "pointSize" : 4,
+                    "fillAreaSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "barSettings" : {
+                    "showBorder" : false,
+                    "borderWidth" : 2,
+                    "borderRadius" : 0,
+                    "showLabel" : false,
+                    "labelPosition" : "top",
+                    "labelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "labelColor" : "rgba(0, 0, 0, 0.76)",
+                    "backgroundSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  }
+                },
+                "_hash" : 0.04460209618274491,
+                "units" : "°C",
+                "decimals" : 0
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -264,16 +332,12 @@
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 1,
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 0,
                 "timewindowMs" : 60000,
-                "interval" : 3600000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1657167240000,
-                  "endTimeMs" : 1658895240000
-                },
-                "quickInterval" : "CURRENT_DAY"
+                "quickInterval" : "CURRENT_DAY",
+                "interval" : 1000
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -546,8 +610,8 @@
                   "col" : 13
                 },
                 "e618e516-c220-5133-5a97-33ac8f6df9e8" : {
-                  "sizeX" : 8,
-                  "sizeY" : 5,
+                  "sizeX" : 16,
+                  "sizeY" : 13,
                   "row" : 6,
                   "col" : 0
                 }
