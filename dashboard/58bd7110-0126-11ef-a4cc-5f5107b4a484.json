@@ -182,7 +182,7 @@
               "dataKeys" : [ {
                 "name" : "sound_value",
                 "type" : "timeseries",
-                "label" : "Temperature",
+                "label" : "Sound",
                 "color" : "#2196f3",
                 "settings" : {
                   "yAxisId" : "default",
@@ -245,7 +245,7 @@
                   }
                 },
                 "_hash" : 0.7694912263114004,
-                "units" : "°C",
+                "units" : "dB",
                 "decimals" : 0,
                 "aggregationType" : null,
                 "funcBody" : null,
@@ -332,12 +332,16 @@
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 0,
+              "selectedTab" : 1,
+              "history" : {
+                "historyType" : 1,
                 "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "interval" : 1000
+                "interval" : 3600000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1657182120000,
+                  "endTimeMs" : 1658910120000
+                },
+                "quickInterval" : "CURRENT_DAY"
               },
               "aggregation" : {
                 "type" : "AVG",
