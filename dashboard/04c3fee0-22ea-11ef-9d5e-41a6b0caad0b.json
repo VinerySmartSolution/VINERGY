@@ -20,7 +20,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta charset=\"utf-8\">\r\n<title>Display Webcam Stream</title>\r\n \r\n<style>\r\n#container {\r\n\tmargin: 0px auto;\r\n\twidth: 500px;\r\n\theight: 375px;\r\n\tborder: 10px #333 solid;\r\n}\r\n#videoElement {\r\n\twidth: 500px;\r\n\theight: 375px;\r\n\tbackground-color: #666;\r\n}\r\n</style>\r\n</head>\r\n \r\n<body>\r\n<div id=\"container\">\r\n\t<video autoplay=\"true\" id=\"videoElement\">\r\n\t\r\n\t</video>\r\n</div>\r\n<script>\r\n        var video = document.querySelector(\"#videoElement\");\r\n\r\n        if (navigator.mediaDevices.getUserMedia) {\r\n        navigator.mediaDevices.getUserMedia({ video: true })\r\n            .then(function (stream) {\r\n            video.srcObject = stream;\r\n            })\r\n            .catch(function (err0r) {\r\n            console.log(\"Something went wrong!\");\r\n            });\r\n        }\r\n</script>\r\n</body>\r\n</html>",
+              "cardHtml" : "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Video Example</title>\r\n</head>\r\n<body>\r\n    <h1>My Favorite Video</h1>\r\n    <!-- Thay thế \"YOUR_VIDEO_URL\" bằng URL thực tế của video bạn muốn nhúng -->\r\n    <iframe width=\"560\" height=\"315\" src=\"rtsp://192.168.1.9:8554/main\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\r\n</body>\r\n</html>",
               "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: black;\n    width: 100%;\n    height: 100%;\n    /*display: flex;\n    flex-direction: column; */\n    align-items: center;\n    justify-content: center;\n}\n\n.video{\n    height: 100%;\n    width: 100%;\n    margin: auto;\n}"
             },
             "title" : "New HTML Card",
@@ -54,7 +54,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<div class='card'>Camera 2 <br>\n<img class = \"video\" src=\"rtsp://192.168.1.9:8554/main\"/>\n\n</div>",
+              "cardHtml" : "<div class='card'>Camera 2 </br>\n<img class = \"video\" src=\"http://192.168.1.7:5000/video_feed\"/>\n\n</div>",
               "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: black;\n    width: 100%;\n    height: 100%;\n    /*display: flex;\n    flex-direction: column; */\n    align-items: center;\n    justify-content: center;\n}\n\n.video{\n    height: 100%;\n    width: 100%;\n    margin: auto;\n}"
             },
             "title" : "New HTML Card",
