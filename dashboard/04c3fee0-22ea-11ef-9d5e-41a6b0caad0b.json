@@ -20,7 +20,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<div class='card'>Camera 1 </br>\n<img class = \"video\" src=\"http://localhost:5000/video_feed\"/>\n\n</div>",
+              "cardHtml" : "<div class='card'>Camera 1 <br>\n<img class = \"video\" src=\"https://www.youtube.com/watch?v=rgRD20RNfZU\"/>\n\n</div>",
               "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: black;\n    width: 100%;\n    height: 100%;\n    /*display: flex;\n    flex-direction: column; */\n    align-items: center;\n    justify-content: center;\n}\n\n.video{\n    height: 100%;\n    width: 100%;\n    margin: auto;\n}"
             },
             "title" : "New HTML Card",
